@@ -1,0 +1,15 @@
+<div class="col-md-4 border bg-white block">
+    <h3 class="text-center">Create Form</h3>
+    <div >
+        <div class="row justify-content-around m-3"><label class="col-md-3">Item:</label><input class="col-md-9" id="FirstName" type="text" [(ngModel)]="expenseEntry.item"></div>
+        <div class="row justify-content-around m-3"><label class="col-md-3">Amount:</label><input class="col-md-9" id="LastName" type="number" [(ngModel)]="expenseEntry.amount"></div>
+        <div class="row justify-content-around m-3"><label class="col-md-3">Category: Title</label><input class="col-md-9" id="JobTitle" type="text" [(ngModel)]="expenseEntry.category" /></div>
+        <div class="row justify-content-around m-3"><label class="col-md-3">Location:</label><input class="col-md-9" id="Department" [(ngModel)]="expenseEntry.location" /></div>
+        <div class="row justify-content-around m-3"><label class="col-md-3">spendOn:</label><input class="col-md-9" id="Gender" type="date" [(ngModel)]="expenseEntry.spendOn" /></div>
+        <div class="row justify-content-around m-3"><label class="col-md-3">Created On:</label><input class="col-md-9" id="CreatedOn" type="date" [(ngModel)]="expenseEntry.createdOn" /></div>
+    </div>
+    <div class="row justify-content-between">
+        <Button class="col-md-4 m-3 btn btn-success" (click)="createPost()">Create</Button>
+        <Button class="col-md-4 m-3 btn btn-danger" (click)="goToList()">Cancel</Button> 
+    </div>  
+</div>   
